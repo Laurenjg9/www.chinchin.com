@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "nombre": "Wanda Maximoff ",
+        "nickname": "Scarlet Whitch",
+        "clase": "Bruja",
+        "habilidad": "Telepatia"
+    },
+    {
+        "id": "2",
+        "nombre": "Logan",
+        "nickname": "Wolverine",
+        "clase": "Mutante",
+        "habilidad": "Regeneracion"
+    },
+    {
+        "id": "3",
+        "nombre": "Tony Stark",
+        "nickname": "Ironman",
+        "clase": "Humano millonario",
+        "habilidad": "Ingeniero"
+    },
+    {
+        "id": "4",
+        "nombre": "Jarvis",
+        "nickname": "Vision",
+        "clase": "IA",
+        "habilidad": "Telepatia"
+    }
+]

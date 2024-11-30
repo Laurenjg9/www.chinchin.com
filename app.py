@@ -1,4 +1,6 @@
 from flask import Flask, render_template          # Importo la libreria de Flask
+import json
+import csv
 
 # Variable que nos permite controlar la aplicacion y desplegarla 
 app = Flask(__name__)                             # Crear la aplicacion: Indica y verifica que estamos trabajando en el archivo incial del proyecto              
@@ -22,4 +24,4 @@ def creadores():
 if __name__ == "__main__":
     port=5003
     app.run(port=port,debug=True)          # Con esta instruccion estoy dando a enten Que estoy en el proceso de desarrollo, lo que hace es que el servidor se reinicia automaticamente cuando la aplicacion tenga un cambio y se guarde
-    
+
