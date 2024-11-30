@@ -1,0 +1,80 @@
+<!--{% extends './layout.html'%}
+{%block title%} Tips {%endblock%}
+{% block body %}
+
+<div class="content">
+    <h2>¡Aplica estos consejos hoy mismo!</h2>
+    <div class="tips">
+        <div class="tip">
+            <h3>Haz un presupuesto</h3>
+            <p>Solo el 30% de los hogares conoce sus gastos mensuales. Lleva un registro de tus ingresos y egresos para organizar tu dinero.</p>
+        </div>
+        <div class="tip">
+            <h3>Ahorra progresivamente</h3>
+            <p>Empieza ahorrando un pequeño porcentaje de tu ingreso. ¡Cada moneda cuenta para tus metas futuras!</p>
+        </div>
+        <div class="tip">
+            <h3>Evita el sobreendeudamiento</h3>
+            <p>Antes de adquirir una deuda, evalúa si es realmente necesaria. Prioriza tus necesidades sobre tus deseos.</p>
+        </div>
+        <div class="tip">
+            <h3>Elige créditos responsables</h3>
+            <p>Compara tasas de interés y plazos antes de aceptar un crédito. ¡El crédito adecuado hace la diferencia!</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips - ChinChin</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'CSS/tips.css')}}">
+</head>
+
+<body>
+    <header>
+        <h1>Finanzas Claras</h1>
+        <p>Consejos prácticos para mejorar tus finanzas</p>
+    </header>
+
+    <nav>
+        <a href="tips.html">Tips</a>
+        <a href="creadores.html">Creadores</a>
+        <a class=imagen href="/"><img src="{{url_for('static',filename = 'img/logoChinchin.png')}}" alt=""></a>
+        <a href="estadisticas.html">Estadísticas</a>
+        <a href="/">Inicio</a>
+    </nav>
+
+    <div class="content">
+        <h2>¡Aplica estos consejos hoy mismo!</h2>
+        <div class="tips">
+            <div class="tip">
+                <h3>Haz un presupuesto</h3>
+                <p>Solo el 30% de los hogares conoce sus gastos mensuales. Lleva un registro de tus ingresos y egresos para organizar tu dinero.</p>
+            </div>
+            <div class="tip">
+                <h3>Ahorra progresivamente</h3>
+                <p>Empieza ahorrando un pequeño porcentaje de tu ingreso. ¡Cada moneda cuenta para tus metas futuras!</p>
+            </div>
+            <div class="tip">
+                <h3>Evita el sobreendeudamiento</h3>
+                <p>Antes de adquirir una deuda, evalúa si es realmente necesaria. Prioriza tus necesidades sobre tus deseos.</p>
+            </div>
+            <div class="tip">
+                <h3>Elige créditos responsables</h3>
+                <p>Compara tasas de interés y plazos antes de aceptar un crédito. ¡El crédito adecuado hace la diferencia!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> Talento Tech | © 2024 - Bootcamp programacion Explorador</p>
+    </footer>
+</body>
+
+</html>
