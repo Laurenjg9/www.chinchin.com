@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creadores - ChinChin</title>
-    <link rel="stylesheet" href="{{url_for('static',filename = 'CSS/creadores.css')}}">
-</head>
-
-<body>
-    <header>
-        <h1>Conoce a los Creadores</h1>
-        <p>El equipo detrás de "Finanzas Claras"</p>
-    </header>
-
-    <nav>
-        <a href="/">Inicio</a>
-        <a href="tips.html">Tips</a>
-        <a href="creadores.html">Creadores</a>
-        <a href="estadisticas.html">Estadísticas</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+{% extends './layout.html'%}
+{%block title%} Creadores {%endblock%}
+{% block body %}
 
     <div class="content">
         <h2>Nuestro Equipo</h2>
@@ -52,10 +32,4 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <p> Talento Tech | © 2024 - Bootcamp programacion Explorador</p>
-    </footer>
-</body>
-
-</html>
+    {% endblock %} 

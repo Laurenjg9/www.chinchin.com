@@ -1,9 +1,11 @@
 from flask import Flask, render_template          # Importo la libreria de Flask
-
+import os
 
 # Variable que nos permite controlar la aplicacion y desplegarla 
-app = Flask(__name__)                             # Crear la aplicacion: Indica y verifica que estamos trabajando en el archivo incial del proyecto              
+app = Flask(__name__) # Crear la aplicacion: Indica y verifica que estamos trabajando en el archivo incial del proyecto              
 
+directorio= os.getcwd()
+print(directorio)
 # Estoy indicando una ruta, definiendo la ruta raiz
 @app.route("/")
 # Metodo que me retorna la informacion de la ruta inicial de la pagina
@@ -17,6 +19,10 @@ def tips():
 @app.route("/creadores.html")
 def creadores():
     return render_template('creadores.html')
+
+@app.route("/estadisticas.html")
+def estadisticas():
+    return render_template('estadisticas.html')
 
 # Ver en el navegador el resultado
 if __name__ == "__main__":
