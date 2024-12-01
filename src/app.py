@@ -1,6 +1,5 @@
 from flask import Flask, render_template          # Importo la libreria de Flask
-import json
-import csv
+
 
 # Variable que nos permite controlar la aplicacion y desplegarla 
 app = Flask(__name__)                             # Crear la aplicacion: Indica y verifica que estamos trabajando en el archivo incial del proyecto              
