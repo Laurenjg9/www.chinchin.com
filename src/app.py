@@ -18,7 +18,6 @@ def tips():
 def creadores():
     return render_template('creadores.html')
 
-
 # Ver en el navegador el resultado
 if __name__ == "__main__":
     port=5003
