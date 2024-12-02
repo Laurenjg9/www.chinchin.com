@@ -8,6 +8,16 @@ body {
     flex-direction: column;
 }
 
+section {
+    background-image: url(/static/img/fondo.jpeg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:fixed;
+    height: 900px ;
+     ;
+}
+
 /* Header */
 header {
     color: #e0beff;
