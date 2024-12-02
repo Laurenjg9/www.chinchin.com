@@ -1,6 +1,6 @@
-/* General */
+/* estilo general */
 body {
-    background:linear-gradient(to top,#0d0f3d,30%, #060611);
+    background: linear-gradient(to top, #0d0f3d, 30%, #060611);
     margin: 0;
     font-family: Arial, sans-serif;
     color: #cab3ff;
@@ -8,10 +8,20 @@ body {
     flex-direction: column;
 }
 
+section {
+    background-image: url(/static/img/fondo.jpeg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:fixed;
+    height: 900px ;
+     ;
+}
+
 /* Header */
 header {
-    color:  #e0beff;
-    background:linear-gradient(to top,#1A1E65,10%, #080922);
+    color: #e0beff;
+    background: linear-gradient(to top, #1A1E65, 10%, #080922);
     padding: 20px;
     align-items: center;
     text-align: center;
@@ -23,7 +33,12 @@ header img {
     height: 70px;
 }
 
-span{color: rgb(255, 255, 202);}
+/* span permite destacar con color cada texto al que se le aplique la etiqueta */
+span {
+    color: rgb(255, 255, 202);
+}
+
+/* prueba de efecto vidrio */
 #contenedor-vidrio {
     display: flex;
     justify-content: center;
@@ -35,16 +50,55 @@ span{color: rgb(255, 255, 202);}
     align-items: center;
     justify-content: center;
     background: rgba(31, 3, 56, 0.1);
+    /* se intenta un efecto de color translucido*/
     border: 1px solid rgba(63, 6, 83, 0.2);
     border-radius: 20px;
     padding: 20px 40px;
     box-shadow: 0 4px 6px rgba(122, 11, 139, 0.2);
     backdrop-filter: blur(10px);
+    /*genera un pequeño desenfoque en el fondo*/
     text-align: center;
     max-width: 50%;
 }
 
-/* Navigation */
+/*Se crea un contenedor que permita centrar todos los textos dentro de esta clase*/
+.contenedor-texto {
+    display: flex;
+    flex-direction: initial;
+    /* Asegura una disposición en la cual la imagen quede al lado del texto */
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: 70px auto;
+    background: rgba(141, 21, 246, 0.763);
+    border: 1px solid rgba(71, 10, 94, 0.652);
+    border-radius: 20px;
+    padding: 30px 50px;
+    box-shadow: 0 0px 10px rgba(173, 46, 233, 0.982);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 70%;
+}
+
+/* contenedor del texto que permite mantener el texto organizado sin que se deforme el titulo o el parrafo*/
+.texto {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.texto h2 {
+    color: #d9cbf9;
+    font-size: 1.5rem;
+}
+
+/* barra nav */
 nav {
     background-color: #080922;
     padding: 15px 5px;
@@ -56,16 +110,18 @@ nav {
 
 nav a {
     text-decoration: none;
+    /* evita que se vea la linea del enlace */
     color: #cab3ff;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/*al pasar el raton se activa el efecto y genera un cambio de tono y escala */
 nav a:hover {
     color: rgb(152, 0, 240);
     transform: scale(1.1);
 }
 
-/* Content */
+/* Contenido, otro contenedor diseñado para alinear textos principales */
 .content {
     padding: 20px;
     max-width: 1200px;
@@ -80,6 +136,7 @@ nav a:hover {
 }
 
 /* Tips */
+/*bloque principal que contiene todas las tarjetas de tips */
 .tips {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +144,7 @@ nav a:hover {
     gap: 20px;
 }
 
+/* clase que genera la tarjeta de cada tip*/
 .tip {
     background-color: #483DB9;
     color: #ffffff;
@@ -95,21 +153,30 @@ nav a:hover {
     width: 300px;
     text-align: center;
     transition: transform 0.3s ease;
+    /*permite que el efecto del hover sea mas suave*/
+
 }
 
+/* se activa camiando el color y generando un movimiento pequeño en la tarjeta seleccionada*/
 .tip:hover {
     transform: translateY(-5px);
     background: #7600ec;
 }
 
 
-h3{color: #FF9545;}
+h3 {
+    color: #FF9545;
+}
 
 
-.tip h3:hover {color: #f8c315;}
+.tip h3:hover {
+    color: #f8c315;
+}
 
 
-/* Team Cards */
+/* tarjetas cradores */
+/*div principal que contiene las tarjetas de forma ordenada hacia el centro
+con una separación de 30px entre ellas*/
 .team-cards {
     display: flex;
     flex-wrap: wrap;
@@ -118,51 +185,66 @@ h3{color: #FF9545;}
     margin: 20px 0px;
 }
 
+/*estructura basica de la tarjeta */
+
 .card {
     width: 250px;
     height: 350px;
     perspective: 1000px;
+    /*permite generar la perspectiva del efecto 3d*/
 }
 
+/*Transforma el elemento al rotarlo en 180 grados al pasar el cursor. */
 .card-inner {
     width: 100%;
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
+    /*renderiza el objeto en un espacioo 3d*/
     transition: transform 0.6s ease;
 }
 
+/*activa el efecto de rotación en la posición y, al pasar el cursor*/
 .card:hover .card-inner {
     transform: rotateY(180deg);
 }
 
+/*se genera el codigo general de las dos caras de la tarjeta*/
 .card-front,
 .card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    /*Oculta la cara de la tarjeta que no está al frente en 
+    un momento dado (necesario para el efecto de volteo).*/
     border-radius: 10px;
     overflow: hidden;
+    /*Evita que el contenido interno de la tarjeta sobresalga.*/
     box-shadow: 2px 6px 6px rgba(166, 51, 255, 0.834);
 }
 
+
+/*se define el diseño y colores internos de la cara frontal*/
 .card-front {
     background-color: #28015f;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
+/*se colocan los parametros para que la imagen frontal salga redonda*/
 .card-front img {
     width: 65%;
     height: 46%;
-    object-fit:fill;
-    border-radius:100% ;
+    object-fit: fill;
+    /*hace que la imagen ocupe todo el espacio permitiendola modificar de alto y ancho*/
+    border-radius: 100%;
 
 }
+
 
 .card-back {
     background-color: #6215a5;
@@ -172,13 +254,15 @@ h3{color: #FF9545;}
     align-items: center;
     justify-content: center;
     transform: rotateY(180deg);
+    /*Rota la cara de atras 180° para que quede
+     "al revés" inicialmente, haciendo que sea visible al voltear la tarjeta.*/
     padding: 5px;
     text-align: center;
 }
 
-/* Carousel */
+/* Carrusel */
 .carousel {
-    display: flexbox;
+    display: flex;
     justify-content: center;
     position: relative;
     overflow: hidden;
@@ -195,29 +279,29 @@ h3{color: #FF9545;}
 }
 
 .carousel-item {
-    min-width: 100%;
+    min-width: 100%; /*permite que cada elemento del carrusel tenga al menos el 100% del ancho del contenedor*/
     height: 200px;
     background-color: #0f0911;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-size: 20px;
-    border-radius:1% ;
+    border-radius: 1%;
 }
 
 .carousel-btn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 50%; /*alinea los botones al centro del carruseñ*/
+    transform: translateY(-50%);/*alinea el centro del boton*/
     background: rgba(255, 125, 3, 0.819);
     color: white;
     border: none;
     padding: 10px;
-    cursor: pointer;
+    cursor: pointer;/*Cambia el cursor a una mano al pasar sobre el botón, mostrnado que es clickeable.*/
     font-size: 18px;
-    z-index: 10;
+    z-index: 50; /*evita que el boton sea cubierto por otro objeto, estando siempre adelante*/
 }
+
+/*se ubican los botones en los extremos respectivos*/
 
 .carousel-btn.prev {
     left: 10px;
@@ -231,13 +315,16 @@ h3{color: #FF9545;}
     background: rgba(103, 0, 182, 0.8);
 }
 
-.main-content{display: flexbox;
+/*contenedor de txto*/
+.main-content {
+    display: block;
     text-align: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
     width: 70%;
-    margin: 20px auto;}
+    margin: 20px auto;
+}
 
 /* Footer */
 footer {
@@ -248,7 +335,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Design */
+/* diseño responsivo */
 @media (max-width: 400px) {
     .carrousel-item {
         padding: 15px 20px;
@@ -267,6 +354,21 @@ footer {
     nav {
         gap: 30px;
     }
+
+    .contenedor-texto {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .texto {
+        width: 100%;
+        /* Aprovecha todo el ancho */
+    }
+
+    .texto h2 {
+        font-size: 1rem;
+        /* Fuente más legible */
+    }
 }
 
 /* Contenedor para centrar los botones */
@@ -277,7 +379,7 @@ footer {
     margin: 20px 0;
 }
 
-/* Estilo para los botones */
+/* Estilo para los botones creados */
 button {
     background: linear-gradient(to top, rgb(208, 66, 14), rgb(241, 190, 6));
     /* degradado de naranja */
@@ -292,7 +394,7 @@ button {
     transition: all 0.3s ease;
 }
 
-/* Efecto hover */
+/* efecto con el raton encima */
 button:hover {
     box-shadow: 0 0 30 #f4e84c;
     background: color, linear-gradient(to top, rgb(69, 3, 99), rgb(148, 5, 177));
@@ -302,11 +404,3 @@ button:hover {
 
 }
 
-/* Efecto activo */
-button:active {
-    box-shadow: 0 0 30 #f4e84c;
-    background: color, linear-gradient(to top, rgb(69, 3, 99), rgb(148, 5, 177));
-    /* morado degradado */
-    transform: scale(0.95);
-    /* Leve reducción */
-}
