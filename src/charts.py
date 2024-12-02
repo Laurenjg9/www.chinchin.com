@@ -26,3 +26,5 @@ plt.tight_layout()
 
 # Mostrar el gráfico
 plt.show()
+plt.savefig("grafica.png")
+plt.close()
