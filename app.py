@@ -24,6 +24,7 @@ def creadores():
 def estadisticas():
     return render_template('estadisticas.html')
 
+
 # Ver en el navegador el resultado
 if __name__ == "__main__":
     port=5003

@@ -8,6 +8,8 @@
 -->
     <link rel="stylesheet" href="{{url_for('static',filename = 'CSS/chinchinhome.css')}}">
     <title>{%block title%} {%endblock%}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+
 </head>
 
 <body>
@@ -22,8 +24,7 @@
                 width="120px" height="25px" class="d-inline-block align-text-top"></a>
         <a href="estadisticas.html">Estadísticas</a>
         <a href="tips.html">Tips</a>
-
-    </nav>
+            </nav>
     {% block body %}
 
     {% endblock %}

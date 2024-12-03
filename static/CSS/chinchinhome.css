@@ -404,3 +404,22 @@ button:hover {
 
 }
 
+.mindmap {
+    display: block;
+    width: 100vw;
+    height: 200vh;
+  }
+
+  #markdown-container {
+    display: block;
+    margin:auto ;
+    background-color: white; /* Fondo del Markdown */
+    width: 90%;
+    max-width: 1000px; /* Limitar el ancho máximo */
+    height:700px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(166, 51, 255, 0.834);
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Para evitar que los elementos del SVG se salgan */
+  }
