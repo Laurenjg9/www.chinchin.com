@@ -27,3 +27,6 @@ plt.tight_layout()
 
 # Mostrar el gráfico
 plt.show()
+
+#crear imagen
+plt.savefig("grafico_deudas_edad.png")

@@ -8,7 +8,7 @@ body {
     flex-direction: column;
 }
 
-section {
+/*section {
     background-image: url(/static/img/fondo.jpeg);
     background-position:center ;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ section {
     height: 900px ;
      ;
 }
-
+*/
 /* Header */
 header {
     color: #e0beff;
@@ -335,6 +335,66 @@ footer {
     margin-top: 20px;
 }
 
+.game-container {display: block;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#scoreboard {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.game-area {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 2px solid #228B22;
+    background: linear-gradient(to bottom, #e1b1fb, #b2ebf2);
+    overflow: hidden;
+}
+
+.player {
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
+    width: 40px;
+    height: 40px;
+    background-color: #8a11f4;
+    border-radius: 50%;
+}
+
+.item {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.coin {
+    background-color: #FFD700;
+}
+
+.expense {
+    background-color: #FF4500;
+}
+
+#startButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #228B22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#startButton:hover {
+    background-color: #006400;
+}
+
 /* diseño responsivo */
 @media (max-width: 400px) {
     .carrousel-item {
@@ -369,6 +429,18 @@ footer {
         font-size: 1rem;
         /* Fuente más legible */
     }
+
+    .contenedor-map{
+        width: 50%;
+    }
+
+    #markdown-container{
+        width: 40%;
+    max-width: 600px; /* Limitar el ancho máximo */
+    height:500px;
+    padding: 10px;
+    }
+
 }
 
 /* Contenedor para centrar los botones */
@@ -404,19 +476,39 @@ button:hover {
 
 }
 
+.contenedor-map {
+    display: flex;
+    flex-direction: initial;
+    /* Asegura una disposición en la cual la imagen quede al lado del texto */
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: 70px auto;
+    background:linear-gradient(to bottom,rgba(141, 21, 246, 0.763), #0d0f3d) ;
+    border: 1px solid rgba(71, 10, 94, 0.652);
+    border-radius: 20px;
+    padding: 30px 3px;
+    box-shadow: 0 0px 10px rgba(74, 15, 129, 0.982);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 70%;
+}
+
 .mindmap {
     display: block;
-    width: 100vw;
-    height: 200vh;
+    width: 60vw;
+    height: 100vh;
   }
 
   #markdown-container {
     display: block;
     margin:auto ;
     background-color: white; /* Fondo del Markdown */
-    width: 90%;
+    width: 80%;
     max-width: 1000px; /* Limitar el ancho máximo */
-    height:700px;
+    height:600px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 3px 10px rgba(166, 51, 255, 0.834);
