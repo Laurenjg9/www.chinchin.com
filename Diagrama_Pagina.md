@@ -1,7 +1,7 @@
 ---
 title: Chin-Chin
 markmap:
-  initialExpandLevel: 2
+  
   colorFreezeLevel: 3
 ---
 # Links
@@ -9,7 +9,7 @@ markmap:
 
 # Estructura interna
 * *HTML*
-    - [**Layout**](https://github.com/Laurenjg9/www.chinchin.com/blob/71b7f23d582ce0b478f17dfe7332ace36d6eefcb/templates/layout.html)
+    - [**Layout**](https://github.com/Laurenjg9/www.chinchin.com/blob/71b7f23d582ce0b478f17dfe7332ace36d6eefcb/templates/layout.html) :  
         
     - [**index**](https://github.com/Laurenjg9/www.chinchin.com/blob/71b7f23d582ce0b478f17dfe7332ace36d6eefcb/templates/index.html)
      
