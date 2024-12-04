@@ -1,4 +1,4 @@
-from flask import Flask, render_template          # Importo la libreria de Flask
+from flask import Flask, render_template  # Importo la libreria de Flask
 import os
 
 # Variable que nos permite controlar la aplicacion y desplegarla 
