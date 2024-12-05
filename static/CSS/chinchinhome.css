@@ -335,7 +335,8 @@ con una separación de 30px entre ellas*/
     justify-content: center;
     overflow: hidden;
     width: 83%;
-    margin: 2px auto;
+    margin: 20px auto;
+    
     
 }
 /* Footer */
@@ -448,9 +449,9 @@ footer {
 
     #markdown-container{
         width: 40%;
-    max-width: 600px; /* Limitar el ancho máximo */
-    height:500px;
-    padding: 10px;
+        max-width: 600px; /* Limitar el ancho máximo */
+        height:500px;
+        padding: 10px;
     }
 
 }
