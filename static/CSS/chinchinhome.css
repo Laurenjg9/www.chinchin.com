@@ -435,9 +435,9 @@ footer {
 
     #markdown-container{
         width: 40%;
-    max-width: 600px; /* Limitar el ancho máximo */
-    height:500px;
-    padding: 10px;
+        max-width: 600px; /* Limitar el ancho máximo */
+        height:500px;
+        padding: 10px;
     }
 
 }
