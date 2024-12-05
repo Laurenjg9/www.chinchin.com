@@ -37,20 +37,20 @@ markmap:
         - Breve resumen de la misión de la página.
   
     - *Sección 3: Propuesta*
-        - Ilustración señalando:
-            1.Breve descripción de cómo la página puede ayudarte a mejorar tus hábitos financieros.
+        - Ilustración
+            Contenido:  descripción 
         - Botón destacado: **Chinchin Tips**.
 
 
 * ==Chinchin Tips==
-    - Texto motivacional.
     - Acompañamiento de ilustracion.
     - Consejos prácticos:
         - *Haz un presupuesto.*
         - *Ahorra progresivamente.*
         - *Evita sobreendeudamiento.*
-        - *Evita sobreendeudamiento.*
-        - *Elige créditos responsable.*
+        - *Creditos responsables.*
+        - *Divide tus gastos.*
+        - *Pago acelerados de deudas.*
 
 
 * ==Analitica de datos==
@@ -64,5 +64,5 @@ markmap:
     - Tarjetas dinamicas
         - Frente: Foto y nombre
         - Detras: Rol y descripcion
-    - Plus: Diagrama de flujo de la pagina
+    - Diagrama de flujo de la pagina
 
