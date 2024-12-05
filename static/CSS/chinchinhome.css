@@ -273,7 +273,6 @@ con una separación de 30px entre ellas*/
 
 .carousel-container {
     display: flex;
-
     transition: transform 0.5s ease;
 
 }
@@ -335,7 +334,7 @@ footer {
     margin-top: 20px;
 }
 
-.game-container {display: block;
+.game-container {display: none;
     justify-content: center;
     justify-items: center;
     text-align: center;
