@@ -2,7 +2,7 @@
 title: Chin-Chin
 markmap:
   
-  colorFreezeLevel: 3
+  colorFreezeLevel: 
 ---
 # Links
    - [GitHub](https://github.com/Laurenjg9/www.chinchin.com)
@@ -65,4 +65,3 @@ markmap:
         - Frente: Foto y nombre
         - Detras: Rol y descripcion
     - Diagrama de flujo de la pagina
-
