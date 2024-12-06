@@ -101,7 +101,7 @@ span {
 /* barra nav */
 nav {
     background-color: #080922;
-    padding: 15px 5px;
+    padding: 15px 5px 15px 37px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -328,7 +328,7 @@ con una separación de 30px entre ellas*/
 .resources {
     display: block;
     text-align: center;
-    background-color:  rgba(103, 0, 182, 0.8);
+    background-color:  rgb(159, 49, 255);
     border-radius: 20px;
     box-shadow: 0 0px 10px rgba(173, 46, 233, 0.982);
     width: auto;
