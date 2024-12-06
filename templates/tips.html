@@ -8,18 +8,29 @@
     <h2>Consejos Prácticos para Mejorar tus Finanzas</h2>
 
     <div class="main-content">
-        <div class="contenedor-texto">
-            <div class="texto">
-                <h2>Un poco de salud financiera</h2>
+        <table class="letrero">
 
-                <p> "¡Recuerda! Tomar decisiones financieras responsables puede mejorar tu bienestar, reducir el estrés
-                    y ayudarte a alcanzar tus metas a largo plazo. Descubre más en nuestras guías completas."
-                </p>
-
+            <div class="contenedor-texto">
+                <div class="texto">
+                    <tr>
+                    <td>
+                        <h2>Un poco de salud financiera</h2>
+</td>
+<td>
+                        <p> "¡Recuerda! Tomar decisiones financieras responsables puede mejorar tu bienestar, reducir el
+                            estrés
+                            y ayudarte a alcanzar tus metas a largo plazo. Descubre más en nuestras guías completas."
+                        </p>
+                    </td>
+                </tr>
+                </div>
+            <tr>
+                <td>
+                    <img src="/static/img/ilustración 2.png" alt="" style="height: 250px;width:270px">
+                </td>
+            </tr>
             </div>
-            <img src="/static/img/ilustración 2.png" alt="" style="height: 250px;width:270px">
-        </div>
-
+        </table>
 
     </div>
 
@@ -45,26 +56,27 @@
         </div>
         <div class="tip">
             <h3>DIVIDE TUS GASTOS</h3>
-            <p>Divídelos en necesidades, deudas y ahorros. Esto ayuda a evitar gastar en cosas innecesarias y 
+            <p>Divídelos en necesidades, deudas y ahorros. Esto ayuda a evitar gastar en cosas innecesarias y
                 reduce la dependencia de la tarjeta de crédito para gastos cotidianos.
             </p>
-        <div class="tip">
-            <h3>PAGO ACELERADO DE DEUDAS</h3>
-            <p>Enfócate en pagar las deudas con tasa de interés más altas, mientras haces los pagos mínimos en el resto.
-            </p>
+            <div class="tip">
+                <h3>PAGO ACELERADO DE DEUDAS</h3>
+                <p>Enfócate en pagar las deudas con tasa de interés más altas, mientras haces los pagos mínimos en el
+                    resto.
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="game-container">
-        <div id="scoreboard">
-            <p>Ahorro: <span id="score">0</span> monedas</p>
+        <div class="game-container">
+            <div id="scoreboard">
+                <p>Ahorro: <span id="score">0</span> monedas</p>
+            </div>
+            <div class="game-area" id="gameArea">
+                <div class="player" id="player"></div>
+            </div>
+            <button id="startButton">Iniciar Juego</button>
         </div>
-        <div class="game-area" id="gameArea">
-            <div class="player" id="player"></div>
-        </div>
-        <button id="startButton">Iniciar Juego</button>
+
     </div>
-   
-</div>
-<script src="/static/JS/game.js"></script>
-{% endblock %}
+    <script src="/static/JS/game.js"></script>
+    {% endblock %}
