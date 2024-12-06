@@ -101,7 +101,7 @@ span {
 /* barra nav */
 nav {
     background-color: #080922;
-    padding: 15px 5px;
+    padding: 15px 5px 15px 37px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
