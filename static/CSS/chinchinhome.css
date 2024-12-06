@@ -1,9 +1,20 @@
 /* estilo general */
+
+.estatic {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top:0;
+    left:0;
+    padding: 0px 0px;
+    z-index: 1000;
+}
+
 body {
     background: linear-gradient(to top, #0d0f3d, 30%, #060611);
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #cab3ff;
+    color: hsl(258, 100%, 85%);
     display: flex;
     flex-direction: column;
 }
@@ -278,7 +289,8 @@ con una separación de 30px entre ellas*/
 }
 
 .carousel-item {
-    min-width: 100%; /*permite que cada elemento del carrusel tenga al menos el 100% del ancho del contenedor*/
+    min-width: 100%;
+    /*permite que cada elemento del carrusel tenga al menos el 100% del ancho del contenedor*/
     height: 200px;
     background-color: #0f0911;
     display: flex;
@@ -289,15 +301,19 @@ con una separación de 30px entre ellas*/
 
 .carousel-btn {
     position: absolute;
-    top: 50%; /*alinea los botones al centro del carruseñ*/
-    transform: translateY(-50%);/*alinea el centro del boton*/
+    top: 50%;
+    /*alinea los botones al centro del carruseñ*/
+    transform: translateY(-50%);
+    /*alinea el centro del boton*/
     background: rgba(255, 125, 3, 0.819);
     color: white;
     border: none;
     padding: 10px;
-    cursor: pointer;/*Cambia el cursor a una mano al pasar sobre el botón, mostrnado que es clickeable.*/
+    cursor: pointer;
+    /*Cambia el cursor a una mano al pasar sobre el botón, mostrnado que es clickeable.*/
     font-size: 18px;
-    z-index: 50; /*evita que el boton sea cubierto por otro objeto, estando siempre adelante*/
+    z-index: 50;
+    /*evita que el boton sea cubierto por otro objeto, estando siempre adelante*/
 }
 
 /*se ubican los botones en los extremos respectivos*/
@@ -328,7 +344,7 @@ con una separación de 30px entre ellas*/
 .resources {
     display: block;
     text-align: center;
-    background-color:  rgb(159, 49, 255);
+    background-color: rgb(159, 49, 255);
     border-radius: 20px;
     box-shadow: 0 0px 10px rgba(173, 46, 233, 0.982);
     width: auto;
@@ -336,9 +352,10 @@ con una separación de 30px entre ellas*/
     overflow: hidden;
     width: 83%;
     margin: 20px auto;
-    
-    
+
+
 }
+
 /* Footer */
 footer {
     background-color: #0d0f3d;
@@ -348,7 +365,8 @@ footer {
     margin-top: 20px;
 }
 
-.game-container {display: none;
+.game-container {
+    display: none;
     justify-content: center;
     justify-items: center;
     text-align: center;
@@ -443,14 +461,15 @@ footer {
         /* Fuente más legible */
     }
 
-    .contenedor-map{
+    .contenedor-map {
         width: 50%;
     }
 
-    #markdown-container{
+    #markdown-container {
         width: 40%;
-        max-width: 600px; /* Limitar el ancho máximo */
-        height:500px;
+        max-width: 600px;
+        /* Limitar el ancho máximo */
+        height: 500px;
         padding: 10px;
     }
 
@@ -499,7 +518,7 @@ button:hover {
     overflow: hidden;
     width: 70%;
     margin: 70px auto;
-    background:linear-gradient(to bottom,rgba(141, 21, 246, 0.763), #0d0f3d) ;
+    background: linear-gradient(to bottom, rgba(141, 21, 246, 0.763), #0d0f3d);
     border: 1px solid rgba(71, 10, 94, 0.652);
     border-radius: 20px;
     padding: 30px 3px;
@@ -513,18 +532,21 @@ button:hover {
     display: block;
     width: 60vw;
     height: 100vh;
-  }
+}
 
-  #markdown-container {
+#markdown-container {
     display: block;
-    margin:auto ;
-    background-color: white; /* Fondo del Markdown */
+    margin: auto;
+    background-color: white;
+    /* Fondo del Markdown */
     width: 80%;
-    max-width: 1000px; /* Limitar el ancho máximo */
-    height:600px;
+    max-width: 1000px;
+    /* Limitar el ancho máximo */
+    height: 600px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 3px 10px rgba(166, 51, 255, 0.834);
     /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    overflow: hidden; /* Para evitar que los elementos del SVG se salgan */
-  }
+    overflow: hidden;
+    /* Para evitar que los elementos del SVG se salgan */
+}
