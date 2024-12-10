@@ -28,5 +28,5 @@ def estadisticas():
 # Ver en el navegador el resultado
 if __name__ == "__main__":
     port=5003
-    app.run(port=port,debug=True)          # Con esta instruccion estoy dando a enten Que estoy en el proceso de desarrollo, lo que hace es que el servidor se reinicia automaticamente cuando la aplicacion tenga un cambio y se guarde
+    app.run(port=port,debug=True)  # Con esta instruccion estoy dando a enten Que estoy en el proceso de desarrollo, lo que hace es que el servidor se reinicia automaticamente cuando la aplicacion tenga un cambio y se guarde
 
