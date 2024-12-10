@@ -73,7 +73,7 @@ plt.tight_layout()
 plt.savefig("2.Deudas_rango_edad.png")
 plt.show()
 
-# Educacion ahorro vs rango edad
+# 3 Educacion ahorro vs rango edad
 
 # Columnas relacionadas con formas de aprender
 formas_aprender = [
